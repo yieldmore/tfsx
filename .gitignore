@@ -6,4 +6,4 @@ obj
 TestResults
 /*.user
 /*.suo
-/tfsx.xml
+/StyleCop.Cache

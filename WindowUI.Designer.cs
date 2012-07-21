@@ -29,14 +29,14 @@
 		private void InitializeComponent()
 		{
 			this.lvwItems = new System.Windows.Forms.ListView();
-			this.btnAttach = new System.Windows.Forms.Button();
-			this.stMain = new System.Windows.Forms.StatusStrip();
-			this.tsRoot = new System.Windows.Forms.ToolStripStatusLabel();
-			this.tsSummary = new System.Windows.Forms.ToolStripStatusLabel();
 			this.colName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colRelPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.colModified = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+			this.btnAttach = new System.Windows.Forms.Button();
+			this.stMain = new System.Windows.Forms.StatusStrip();
+			this.tsSummary = new System.Windows.Forms.ToolStripStatusLabel();
+			this.tsRoot = new System.Windows.Forms.ToolStripStatusLabel();
 			this.stMain.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -59,43 +59,6 @@
 			this.lvwItems.UseCompatibleStateImageBehavior = false;
 			this.lvwItems.View = System.Windows.Forms.View.Details;
 			// 
-			// btnAttach
-			// 
-			this.btnAttach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnAttach.Location = new System.Drawing.Point(314, 11);
-			this.btnAttach.Name = "btnAttach";
-			this.btnAttach.Size = new System.Drawing.Size(75, 23);
-			this.btnAttach.TabIndex = 1;
-			this.btnAttach.Text = "Attach";
-			this.btnAttach.UseVisualStyleBackColor = true;
-			// 
-			// stMain
-			// 
-			this.stMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsSummary,
-            this.tsRoot});
-			this.stMain.Location = new System.Drawing.Point(8, 220);
-			this.stMain.Name = "stMain";
-			this.stMain.Size = new System.Drawing.Size(384, 22);
-			this.stMain.SizingGrip = false;
-			this.stMain.TabIndex = 2;
-			this.stMain.Text = "statusStrip1";
-			// 
-			// tsRoot
-			// 
-			this.tsRoot.BorderStyle = System.Windows.Forms.Border3DStyle.Bump;
-			this.tsRoot.Name = "tsRoot";
-			this.tsRoot.Size = new System.Drawing.Size(311, 17);
-			this.tsRoot.Spring = true;
-			this.tsRoot.Text = "Root Location:";
-			this.tsRoot.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// tsSummary
-			// 
-			this.tsSummary.Name = "tsSummary";
-			this.tsSummary.Size = new System.Drawing.Size(58, 17);
-			this.tsSummary.Text = "Summary";
-			// 
 			// colName
 			// 
 			this.colName.Text = "Name";
@@ -114,7 +77,45 @@
 			this.colModified.Text = "Modified";
 			this.colModified.Width = 85;
 			// 
-			// Window
+			// btnAttach
+			// 
+			this.btnAttach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.btnAttach.Location = new System.Drawing.Point(314, 11);
+			this.btnAttach.Name = "btnAttach";
+			this.btnAttach.Size = new System.Drawing.Size(75, 23);
+			this.btnAttach.TabIndex = 1;
+			this.btnAttach.Text = "Attach";
+			this.btnAttach.UseVisualStyleBackColor = true;
+			this.btnAttach.Click += new System.EventHandler(this.btnAttach_Click);
+			// 
+			// stMain
+			// 
+			this.stMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsSummary,
+            this.tsRoot});
+			this.stMain.Location = new System.Drawing.Point(8, 220);
+			this.stMain.Name = "stMain";
+			this.stMain.Size = new System.Drawing.Size(384, 22);
+			this.stMain.SizingGrip = false;
+			this.stMain.TabIndex = 2;
+			this.stMain.Text = "statusStrip1";
+			// 
+			// tsSummary
+			// 
+			this.tsSummary.Name = "tsSummary";
+			this.tsSummary.Size = new System.Drawing.Size(58, 17);
+			this.tsSummary.Text = "Summary";
+			// 
+			// tsRoot
+			// 
+			this.tsRoot.BorderStyle = System.Windows.Forms.Border3DStyle.Bump;
+			this.tsRoot.Name = "tsRoot";
+			this.tsRoot.Size = new System.Drawing.Size(311, 17);
+			this.tsRoot.Spring = true;
+			this.tsRoot.Text = "Root Location:";
+			this.tsRoot.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// WindowUI
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -122,7 +123,7 @@
 			this.Controls.Add(this.btnAttach);
 			this.Controls.Add(this.lvwItems);
 			this.MinimumSize = new System.Drawing.Size(400, 250);
-			this.Name = "Window";
+			this.Name = "WindowUI";
 			this.Padding = new System.Windows.Forms.Padding(8);
 			this.Size = new System.Drawing.Size(400, 250);
 			this.stMain.ResumeLayout(false);

@@ -21,7 +21,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <IncrementalBuild>false</IncrementalBuild>
-    <DocumentationFile>TfsX.xml</DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -52,10 +53,12 @@
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ChangeItem.cs" />
     <Compile Include="Connect.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Engine.cs" />
+    <Compile Include="IOHelper.cs" />
     <Compile Include="IWindowUI.cs" />
     <Compile Include="MyApp.cs" />
     <Compile Include="VSExtensions.cs" />
@@ -125,6 +128,7 @@
   <ItemGroup>
     <Content Include="C:\Users\imran\Documents\Visual Studio 2010\Addins\TfsX - For Testing.AddIn">
       <Link>TfsX - For Testing.AddIn</Link>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="TfsX.AddIn" />
   </ItemGroup>
