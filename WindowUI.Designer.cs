@@ -37,6 +37,7 @@
 			this.stMain = new System.Windows.Forms.StatusStrip();
 			this.tsSummary = new System.Windows.Forms.ToolStripStatusLabel();
 			this.tsRoot = new System.Windows.Forms.ToolStripStatusLabel();
+			this.colType = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.stMain.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -49,12 +50,13 @@
             this.colName,
             this.colRelPath,
             this.colSize,
-            this.colModified});
+            this.colModified,
+            this.colType});
 			this.lvwItems.FullRowSelect = true;
 			this.lvwItems.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
 			this.lvwItems.Location = new System.Drawing.Point(11, 40);
 			this.lvwItems.Name = "lvwItems";
-			this.lvwItems.Size = new System.Drawing.Size(378, 177);
+			this.lvwItems.Size = new System.Drawing.Size(474, 177);
 			this.lvwItems.TabIndex = 0;
 			this.lvwItems.UseCompatibleStateImageBehavior = false;
 			this.lvwItems.View = System.Windows.Forms.View.Details;
@@ -62,6 +64,7 @@
 			// colName
 			// 
 			this.colName.Text = "Name";
+			this.colName.Width = 92;
 			// 
 			// colRelPath
 			// 
@@ -75,12 +78,12 @@
 			// colModified
 			// 
 			this.colModified.Text = "Modified";
-			this.colModified.Width = 85;
+			this.colModified.Width = 105;
 			// 
 			// btnAttach
 			// 
 			this.btnAttach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnAttach.Location = new System.Drawing.Point(314, 11);
+			this.btnAttach.Location = new System.Drawing.Point(410, 11);
 			this.btnAttach.Name = "btnAttach";
 			this.btnAttach.Size = new System.Drawing.Size(75, 23);
 			this.btnAttach.TabIndex = 1;
@@ -95,7 +98,7 @@
             this.tsRoot});
 			this.stMain.Location = new System.Drawing.Point(8, 220);
 			this.stMain.Name = "stMain";
-			this.stMain.Size = new System.Drawing.Size(384, 22);
+			this.stMain.Size = new System.Drawing.Size(480, 22);
 			this.stMain.SizingGrip = false;
 			this.stMain.TabIndex = 2;
 			this.stMain.Text = "statusStrip1";
@@ -110,10 +113,16 @@
 			// 
 			this.tsRoot.BorderStyle = System.Windows.Forms.Border3DStyle.Bump;
 			this.tsRoot.Name = "tsRoot";
-			this.tsRoot.Size = new System.Drawing.Size(311, 17);
+			this.tsRoot.Size = new System.Drawing.Size(407, 17);
 			this.tsRoot.Spring = true;
 			this.tsRoot.Text = "Root Location:";
 			this.tsRoot.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// colType
+			// 
+			this.colType.Text = "Type";
+			this.colType.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+			this.colType.Width = 80;
 			// 
 			// WindowUI
 			// 
@@ -125,7 +134,7 @@
 			this.MinimumSize = new System.Drawing.Size(400, 250);
 			this.Name = "WindowUI";
 			this.Padding = new System.Windows.Forms.Padding(8);
-			this.Size = new System.Drawing.Size(400, 250);
+			this.Size = new System.Drawing.Size(496, 250);
 			this.stMain.ResumeLayout(false);
 			this.stMain.PerformLayout();
 			this.ResumeLayout(false);
@@ -144,5 +153,6 @@
 		private System.Windows.Forms.ColumnHeader colRelPath;
 		private System.Windows.Forms.ColumnHeader colSize;
 		private System.Windows.Forms.ColumnHeader colModified;
+		private System.Windows.Forms.ColumnHeader colType;
 	}
 }

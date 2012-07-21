@@ -39,5 +39,21 @@ namespace Cselian.TfsX
 			xml.Serialize(op, items);
 			op.Close();
 		}
+
+		public static string FolderOf(string file)
+		{
+			return Directory.GetParent(file).FullName;
+		}
+
+		public static string RelFolderOf(string file, string startFolder)
+		{
+			var f = FolderOf(file) + @"\";
+			return f.Substring(startFolder.Length);
+		}
+
+		public static void CopyToTemp(string file, string rootFolder)
+		{
+
+		}
 	}
 }

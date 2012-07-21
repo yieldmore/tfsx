@@ -63,8 +63,7 @@ namespace Cselian.TfsX
 			public LvwItem(ChangeItem item, ListViewGroup grp)
 			{
 				Text = item.FileName;
-				SubItems.AddRange(new string[] { item.RelPath, "todo", "todo" });
-
+				SubItems.AddRange(new string[] { item.RelPath, "todo", "todo", item.Change.ToString() });
 
 				Group = grp;
 			}

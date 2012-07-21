@@ -58,10 +58,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Engine.cs" />
-    <Compile Include="IOHelper.cs" />
+    <Compile Include="Helpers\IOHelper.cs" />
+    <Compile Include="Helpers\ListHelper.cs" />
+    <Compile Include="Helpers\VSExtensions.cs" />
     <Compile Include="IWindowUI.cs" />
     <Compile Include="MyApp.cs" />
-    <Compile Include="VSExtensions.cs" />
     <Compile Include="WindowUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
